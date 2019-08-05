@@ -8,3 +8,11 @@ while counter != 0:
     print(counter)
     #Augmented Operator
     counter -= 1
+
+counter = 5
+while counter:
+        print(counter)
+        # Augmented Operator
+        counter -= 1
+
+print("Outside while loop")
