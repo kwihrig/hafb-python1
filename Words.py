@@ -13,6 +13,11 @@ with urlopen(file) as story:
        words = line.decode('utf-8').split() #split with space as default
 #       print(words)
        for word in words:
+           if word in data:
+               data[word] +=1
+           else:
+               data[word] +=1
+
            count += 1
 print ("Total number of words ", count)
 
