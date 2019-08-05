@@ -17,3 +17,16 @@ a[0] = "tomatoes"
 print (a, a[1])
 a[1] = "3.14"
 print (a, a[1])
+
+# Begin with an empty list
+# names = []
+# names = input("Enter your name")
+names = []
+# Ask user to enter 3 names, and add them to the list
+total = 0
+while total < 3:
+    name = input("enter a name\n")
+    names.append(name)
+    total = total+1
+# display list
+print(names)
