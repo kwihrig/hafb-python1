@@ -1,10 +1,12 @@
 """
 Get a file from the web:
 http://icarus.cs.weber.edu/~hvalle/hafb/words.txt
+from functions
 
 Task 1: count number of words in document
 """
 from urllib.request import urlopen
+from functions import even_or_odd
 file = "http://icarus.cs.weber.edu/~hvalle/hafb/words.txt"
 
 count = 0
@@ -22,4 +24,4 @@ with urlopen(file) as story:
 print ("Total number of words ", count)
 print ("Total data ", data)
 
-
+even_or_odd(99)
