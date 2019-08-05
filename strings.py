@@ -20,7 +20,16 @@ print(s4)
 # Support for backslash
 s5 = "A\\in a string"
 print(s5)
+s6 = 'this is " wow '
+print (s6)
 
+# Raw Strings
+raw_string = r'C:\User\Documents\Books'
+print (raw_string)
+
+# String as sequence
+s = "parrot"
+print ("s[4]", s[4])
 
 
 
