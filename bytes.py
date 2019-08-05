@@ -17,7 +17,7 @@ print (info.split())
 # Encoding Alt+ 162 = ó
 message = "Vamos al zoológico"
 print (message)
-# Endcode the string
+# Encode the string
 data = message.encode("utf-8")
 print (data)
 # Decoding the string
