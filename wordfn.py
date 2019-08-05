@@ -24,5 +24,6 @@ def fetch_words()
                    data[word] = 1
                count += 1
 print ("Total number of words ", count)
+
 print ("Total data ", data)
 
