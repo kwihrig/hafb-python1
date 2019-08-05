@@ -16,7 +16,11 @@ if "eggs":
 h=42
 if h> 50:
     print ("Greater than 50")
-else:
+elif h < 50: # ElSE IF
     print("Less than 50")
+else:
+    print("Equals 50")
+
+
 
 print ("Done")
