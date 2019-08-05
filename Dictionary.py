@@ -20,12 +20,12 @@ roster={}      #Empty dictionary
 total = 0
 while total < 3:
     # Get key value
-    name = input("enter a name\n")
+    name = input("enter a player's name\n")
     #Get value associated to key
     score = input("enter score\n")
     # Add element to dictionary.
     # Note: if key value exists, it will update the value otherwise it will be added to the dict.
     roster[name] = score
     total +=1
-# display list
+# print dictionary
 print(roster)
