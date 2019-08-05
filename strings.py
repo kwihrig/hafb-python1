@@ -29,7 +29,14 @@ print (raw_string)
 
 # String as sequence
 s = "parrot"
-print ("s[4]", s[4])
+# index notation: 0, 1, 2, etc
+print ("s[4]", s[4], type (s))
+# Capitalize the string
+print (s, s.capitalize())
+
+
+
+
 
 
 
