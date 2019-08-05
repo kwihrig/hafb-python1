@@ -14,3 +14,4 @@ d = {'alice': "801-123-45-8988",
 #Iterate over the dictionary
 for item in d:
     print (item, "=>", d[item])
+
