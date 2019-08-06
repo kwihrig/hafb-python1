@@ -13,7 +13,6 @@ def show_count():
 
 
 def set_count(num):
-    num=0
     """
     set global counter to input
     :param num: input number
@@ -31,8 +30,6 @@ def main():
     show_count()
     set_count(9)
     show_count()
-#    print(count)
-
 
 
 
