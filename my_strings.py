@@ -21,6 +21,7 @@ def main():
     # Split record
     print("Split rec", record.split(":"))
     # Partitioing Strings
+    # you can use the "dummy" object: _
     departure, separator, arrival = "London:Edinburgh".partition(":")
     print(departure, arrival)
 
