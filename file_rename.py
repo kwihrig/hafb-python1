@@ -9,7 +9,11 @@ def rename_files():
     rename files in a folder
     :return: nothing
     """
-    pass
+    folder_dir = r"C:\Users\kevinihrig\Desktop\hafb\prankOrig"
+    files = os.listdir(folder_dir)
+    for file in files:
+        print(file)
+
 
 
 def main():
