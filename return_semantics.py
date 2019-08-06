@@ -24,16 +24,38 @@ def sum_two(num1, num2=8):
     return num1 + num2
 
 
-def border(message, border='*'):
+def banner(message, border='*'):
     """
     print message in banner form
     :param message: string to print
     :param border: border character for string
     :return:
     """
-    message =
-    print(num1," + ", num2, " = ", total)
-    return num1 + num2
+
+    #print("Enter a string")
+    #response = input()  # take user input
+
+
+    print(border*len(message))
+    print(message)
+    print(border * len(message))
+
+
+def banner1(message, border='*'):
+    """
+    print message in banner form
+    :param message: string to print
+    :param border: border character for string
+    :return:
+    """
+
+    #print("Enter a string")
+    #response = input()  # take user input
+
+
+    print("*", border*len(message), "*")
+    print("*", message, "*")
+    print("*", border * len(message), "*")
 
 def main():
     """
@@ -49,9 +71,13 @@ def main():
     sum_two(n1, n2)
     sum_two(n1)
 
-
     print("Only one input", sum_two(n1))
 
+    banner("Weber State")
+    banner("WeberState University", "$")
+
+    banner("Weber State")
+    banner("Weber State University", "$")
 
 if __name__== '__main__':
         main()
