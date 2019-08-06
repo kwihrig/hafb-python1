@@ -24,6 +24,16 @@ def sum_two(num1, num2=8):
     return num1 + num2
 
 
+def border(message, border='*'):
+    """
+    print message in banner form
+    :param message: string to print
+    :param border: border character for string
+    :return:
+    """
+    message =
+    print(num1," + ", num2, " = ", total)
+    return num1 + num2
 
 def main():
     """
@@ -41,6 +51,7 @@ def main():
 
 
     print("Only one input", sum_two(n1))
+
 
 if __name__== '__main__':
         main()
