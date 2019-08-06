@@ -24,7 +24,10 @@ def main():
     # you can use the "dummy" object: _
     departure, separator, arrival = "London:Edinburgh".partition(":")
     print(departure, arrival)
-
+    t = "London:Edinburgh".partition(":")
+    print(t, type(t))
+    # String formatting using format()
+    print("The age of {0} is {1}".format("Mario",34))
 
 
 if __name__ == '__main__':
