@@ -12,7 +12,8 @@ def rename_files():
     folder_dir = r"C:\Users\kevinihrig\Desktop\hafb\prankOrig"
     files = os.listdir(folder_dir)
     for file in files:
-        print(file)
+        new_file = file.lstrip('0123456789')
+        print("old name", file, "     new name", new_file)
 
 
 
