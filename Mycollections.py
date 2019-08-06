@@ -12,7 +12,11 @@ def do_tuples():
     # Use() to define a tuple
     t=("Odgen", 1.99, 2)
     print(t,type(t))
-
+    print("Size ", len(t))
+    print("One member:", t[0])
+    # To iterate over a tuple
+    for item in t:
+        print (item)
 
 
 def main():
