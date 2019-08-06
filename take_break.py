@@ -10,9 +10,12 @@ def main():
     :return: none
     """
     video_address = "https://youtu.be/mXAs7Nva7kc"
-    # Delay "sleep"
-    time.sleep(3)
-    webbrowser.open(video_address)
+    counter = 0
+    while counter < 3:
+        # Delay "sleep"
+        time.sleep(10) # 1 hr
+        webbrowser.open(video_address)
+        counter +=1
 
 
 if __name__== '__main__':
