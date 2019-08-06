@@ -34,6 +34,15 @@ def min_max(items):
     """
     return min(items), max (items)
 
+def swap(obj1, obj2):
+    """
+    Swap values of the objects
+    :param obj1: first
+    :param obj2: second
+    :return: values swapped
+    """
+    return obj2, obj1
+
 
 def main():
     """
@@ -49,6 +58,14 @@ def main():
     lower, upper = min_max([56, 76, 11, 12, 90])
     print("min", lower)
     print("max", upper)
+    #Swap values
+    a = "jelly"
+    b = "bean"
+    print(a,b)
+    # call you function
+    a, b = swap(a,b)
+    print(a,b)
+
 
 
 
