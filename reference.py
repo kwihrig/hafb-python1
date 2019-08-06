@@ -21,7 +21,16 @@ def replace(g):
     g = [17,48,89]
     print("g= ", g)
 
-
+def replace_content(g):
+    """
+    replace the content of the input list
+    :param g: input list
+    :return: nothing
+    """
+    g[0] = 88
+    g[1] = 22
+    g[2] = 44
+    print("g= ", g)
 
 
 def main():
