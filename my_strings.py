@@ -28,7 +28,7 @@ def main():
     print(t, type(t))
     # String formatting using format()
     print("The age of {0} is {1}".format("Mario",34))
-
+    print("The age of {0} is {1}, and the birthday of {0} is {2}".format("Mario",34, "August 12th"))
 
 if __name__ == '__main__':
     main()
