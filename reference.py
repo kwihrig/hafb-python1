@@ -21,6 +21,9 @@ def replace(g):
     g = [17,48,89]
     print("g= ", g)
 
+
+
+
 def main():
     """
     test function
@@ -30,7 +33,8 @@ def main():
     print("Before m= ", m)
     modify(m)
     print("After m= ", m)
-
+    replace(m)
+    print("After replace() m= ", m)
 
 
 if __name__== '__main__':
