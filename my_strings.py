@@ -17,7 +17,9 @@ def main():
     # instead of + operator
     teams = ["Real Madrid", "Barcelona", "Manchester United"]
     record = ":".join(teams)
-    print (record)
+    # print (record)
+    # Split record
+    print("Split rec", record.split(":"))
 
 
 if __name__ == '__main__':
