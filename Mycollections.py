@@ -18,8 +18,8 @@ def do_tuples():
     for item in t:
         print (item)
 
-    # Single tuples
-    t1 = (6)
+    # Single tuples, must end with comma
+    t1 = (6,)
     print(t1, type(t1))
 
 
