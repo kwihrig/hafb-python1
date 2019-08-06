@@ -8,6 +8,7 @@ def modify(k):
     :param k: input list
     :return: nothing
     """
+    # list are passed by reference
     k.append(39)
     print("k= ", k)
 
@@ -21,7 +22,7 @@ def main():
     m= [9,15,24]
     print("Before m= ", m)
     modify(m)
-    print("after m= ", m)
+    print("After m= ", m)
 
 
 
