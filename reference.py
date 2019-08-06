@@ -12,7 +12,14 @@ def modify(k):
     k.append(39)
     print("k= ", k)
 
-
+def replace(g):
+    """
+    replace input list
+    :param g: input list
+    :return: nothing
+    """
+    g = [17,48,89]
+    print("g= ", g)
 
 def main():
     """
