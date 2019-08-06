@@ -2,6 +2,14 @@
 Rename files from a folder
 Get "http://icarus.cs.weber.edu/~hvalle/hafb/prank.zip"
 """
+import os
+
+def rename_files():
+    """
+    rename files in a folder
+    :return: nothing
+    """
+    pass
 
 
 def main():
@@ -9,7 +17,8 @@ def main():
     test function
     :return: nothing
     """
-    pass
+    rename_files()
+
 
 
 if __name__== '__main__':
