@@ -57,13 +57,15 @@ def banner1(message, border='*'):
     print("*", message, "*")
     print("*", border * len(message), "*")
 
-def add_spam(menu=[]):
+def add_spam(menu=None):
     """
     Add spam to the menu list
     :param menu:
     :return: menu list
     """
-    menu.sppend('spam')
+    if menu is None:
+        menu = []
+    menu.append('spam')
     return menu
 
 def main():
@@ -89,9 +91,9 @@ def main():
     banner1("Weber State University", "$")
 
     breakfast = ['eggs', 'bacon']
-    print("before", breakfast)
+    print("Before", breakfast)
     add_spam(breakfast)
-    print("after", breakfast)
+    print("After", breakfast)
 
 
 
