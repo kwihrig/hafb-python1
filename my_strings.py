@@ -20,6 +20,10 @@ def main():
     # print (record)
     # Split record
     print("Split rec", record.split(":"))
+    # Partitioing Strings
+    departure, separator, arrival = "London:Edinburgh".partition(":")
+    print(departure, arrival)
+
 
 
 if __name__ == '__main__':
