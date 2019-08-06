@@ -1,5 +1,6 @@
 """
 Rename files from a folder
+Get "http://icarus.cs.weber.edu/~hvalle/hafb/prank.zip"
 """
 
 
