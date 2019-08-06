@@ -13,9 +13,10 @@ def main():
     counter = 0
     while counter < 3:
         # Delay "sleep"
-        time.sleep(10) # 1 hr
+        time.sleep(60*60) # 1 hr
         webbrowser.open(video_address)
         counter +=1
+        print ("it is time to take a break, it is ", time.ctime())
 
 
 if __name__== '__main__':
