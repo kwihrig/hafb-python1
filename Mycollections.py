@@ -21,7 +21,9 @@ def do_tuples():
     # Single tuples, must end with comma
     t1 = (6,)
     print(t1, type(t1))
-
+# another wa to create tuples
+    # Parentheses are optional
+    t2 = 1, 2, 3, 5
 
 def main():
     """
