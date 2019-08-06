@@ -24,6 +24,7 @@ def do_tuples():
 # another wa to create tuples
     # Parentheses are optional
     t2 = 1, 2, 3, 5
+    print(t2, type(t2))
 
 def main():
     """
