@@ -51,7 +51,15 @@ def main():
     print(stocks)
     del stocks['YHOO']
     print(stocks)
-
+# mutability of dict
+    isotopes = {
+        'H':[1, 2, 3],
+        'He':[3, 4],
+        'Li':[6, 7],
+        'Be':[7,9,10],
+        'B':[10, 11],
+        'C':[11, 12, 13, 14]
+    }
 
 
 
