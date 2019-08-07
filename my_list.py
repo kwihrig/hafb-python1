@@ -27,12 +27,13 @@ def main():
     print("from beg to three members", s[:3])
     print("all, from beg to end, whole list", s[:])
 #make a copy of the list
-    t=s
+    t=s #this defines t and s as the same list. redefine either one, both change - this is a shallow copy.
     print("s: ", s)
     print("t: ", t)
     print("t is s", t is s)
-    t = s[:]
+    t = s[:] # this is a deep copy - t is defined as the contents of s right now. we have made a copy of the data in t, s is still its own list
     print("t is s", t is s)
+    print("t == s", t == s)
 
 
 
