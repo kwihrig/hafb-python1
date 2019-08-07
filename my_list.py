@@ -71,7 +71,12 @@ def main():
     # index ()
     w = "the quick brown fox jumps over the lazy dog".split()
     i = w.index('fox')
-    print("The index of 'fox' entry is:", i)
+    print("The index of 'fox' entry is:", i, w[i])
+# if no index is found, it will throw a ValueError
+#    i = w.index('cat')
+#    print("The index of 'cat' entry is:", i, w[i])
+
+
 
 
     #a= [[123,456], [444,888]]
