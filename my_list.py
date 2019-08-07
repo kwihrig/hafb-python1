@@ -76,6 +76,14 @@ def main():
 #    i = w.index('cat')
 #    print("The index of 'cat' entry is:", i, w[i])
 
+# Membership testing with: count()
+    print("'The' value is ", w.count("the"))
+    # also test membership with : in, not in
+    print(37 in [12, 22, 37, 99])
+    print(78 not in [12, 22, 37, 99])
+
+
+
 
 
 
