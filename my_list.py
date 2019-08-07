@@ -25,6 +25,7 @@ def main():
     print("from first to three members, another way", s[1:-2])
     print("from 1 to the end", s[1:])
     print("from beg to three members", s[:3])
+    print("all, from beg to end, whole list", s[:])
 
 
 
