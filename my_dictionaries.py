@@ -61,11 +61,11 @@ def main():
         'C':[11, 12, 13, 14]
     }
 
-    print(isotopes)
+    pp(isotopes)
     isotopes['H']+= [4, 5, 6, 7]
-    print(isotopes)
+    pp(isotopes)
     isotopes['N'] = [13, 14, 15]
-    print(isotopes)
+    pp(isotopes)
 
 
 
