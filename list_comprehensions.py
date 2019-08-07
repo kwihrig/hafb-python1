@@ -11,6 +11,10 @@ def main():
     """
     words = "Today I am very happy to learn about list comprehensions".split()
     print(words)
+    data = []    # empty list
+    for word in words:
+        # Some analysis
+        print (word)
 
 
 if __name__ == '__main__':
