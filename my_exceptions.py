@@ -4,19 +4,20 @@ when an exception is found, normal flow of program is interrupted
 
 """
 
+import sys
 
-def convert (s):
+def convert(s):
     """
     converts a string to integer
     :param s:
     :return:
     """
-import sys
 #    x = -1
 
-try:
+
+    try:
  #       x = int(s)
-    return int(s)
+        return int(s)
     except (ValueError, TypeError) as e:
         print("conversion error{}"\
               .format(str(e)), file=sys.stderr)
