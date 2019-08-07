@@ -36,6 +36,11 @@ def main():
     info3 = {len(str(factorial(x))) for x in range(200)}
     pp(info3)
 
+# Dictionary Comprehensions
+    nba_teams = {'jazz':'slc', 'warriors':'oakland', 'lakers':'LA', 'clippers':'LA'}
+    pp(nba_teams)
+    teams_nba = {city:team for team, city in nba_teams.items()}
+    pp(teams_nba)
 
 if __name__ == '__main__':
     main()
