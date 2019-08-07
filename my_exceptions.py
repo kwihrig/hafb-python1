@@ -30,7 +30,13 @@ def sqrt(x):
     :param x: number to compute sqrt
     :return: sqrt of x
     """
+    guess = x
+    i = 0
+    while guess*guess != x and i< 20:
+        guess = (guess + x/guess)/2.0
+        i +=1
 
+    return guess
 
 
 def main():
@@ -39,9 +45,19 @@ def main():
     :return: none
     """
 
-    print (convert("11"))
-    print (convert("hello"))
-    print (convert([1, 4, 8]))
+   # print (convert("11"))
+    #print (convert("hello"))
+   # print (convert([1, 4, 8]))
+
+    print(sqrt(9))
+    print(sqrt(11))
+    print(sqrt(-3))
+    print(sqrt(100))
+    print(sqrt(256))
+    print(sqrt(255))
+
+
+
 
 
 
