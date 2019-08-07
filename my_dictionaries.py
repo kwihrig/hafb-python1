@@ -1,7 +1,7 @@
 """
 Learn about dictionaries
 """
-
+from pprint import pprint as pp
 
 def main():
     """
@@ -60,6 +60,14 @@ def main():
         'B':[10, 11],
         'C':[11, 12, 13, 14]
     }
+
+    print(isotopes)
+    isotopes['H']+= [4, 5, 6, 7]
+    print(isotopes)
+    isotopes['N'] = [13, 14, 15]
+    print(isotopes)
+
+
 
 
 
