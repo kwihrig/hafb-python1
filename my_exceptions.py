@@ -23,6 +23,16 @@ def convert(s):
               .format(str(e)), file=sys.stderr)
     return -1
 
+
+def sqrt(x):
+    """
+    compute the square root using method of Heron of Alexandria
+    :param x: number to compute sqrt
+    :return: sqrt of x
+    """
+
+
+
 def main():
     """
     test function
