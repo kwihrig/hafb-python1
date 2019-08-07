@@ -34,7 +34,7 @@ def main():
     for v in s:
         print(v)
 
-# enumerat (): retnr iterable series
+# enumerate(): return iterable series
     t = [6, 789, 128, 98, 3, 22]
     for p in enumerate(t):
         print (p, p[0], p[1])
