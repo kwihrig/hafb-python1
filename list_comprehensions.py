@@ -30,6 +30,9 @@ def main():
     info2 = [len(str(factorial(x))) for x in range(20)]
     print(info2, type (info2))
 
+    # Set comprehensions: ()
+    info3 = {len(str(factorial(x))) for x in range(20)}
+    print(info3, type(info3))
 
 
 if __name__ == '__main__':
