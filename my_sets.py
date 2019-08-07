@@ -39,6 +39,12 @@ def main():
     bk_data= sdata.copy()
     print(bk_data is sdata)
     print(bk_data == sdata)
+    ######### Define some sets
+    blue_eyes = {"olivia", "Harry", "lily", "jack"}
+    blond_hair = {"Harry", "Jack", "Amelia", "Mia", "Joshua"}
+    smell_hcn = {"Harry", "Amelia"}
+    taste_ptc = {"Harry", "Lily", "Amelia", "Lola"}
+    o_type = {}
 
 
 
