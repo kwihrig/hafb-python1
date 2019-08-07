@@ -21,6 +21,10 @@ def main():
     # slicing
     print(s, type(s))
     print("from first to one before the last member", s[1:-1])
+    print("from first to three members", s[1:3])
+    print("from first to three members, another way", s[1:-2])
+    print("from 1 to the end", s[1:])
+    print("from beg to three members", s[:3])
 
 
 
