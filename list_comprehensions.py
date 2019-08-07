@@ -45,6 +45,7 @@ def main():
     # Filter Predicates
     primes = [x for x in range(1001) if is_prime(x)]
     print(len(primes), primes)
+
 def is_prime(num):
     """
     finds primes
