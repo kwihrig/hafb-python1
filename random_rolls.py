@@ -2,10 +2,12 @@
 Simulate 6000 rolls of a die (1-6)
 """
 import random
+import statistics
+
 
 def roll_die(num):
     """
-    Random roll of adie
+    Random roll of a die
     :param num:number of rolls
     :return: a list of frequencies
     Index 0 maps to 1
@@ -18,7 +20,6 @@ def roll_die(num):
         freq[n - 1] += 1
 #        print(random.randint(1, 6))
     return freq
-    print (freq)
 
 
 def main():
@@ -27,9 +28,14 @@ def main():
     :return: none
     """
     num = int(input("How many times you need to roll: "))
-    l = roll_die(num)
-    for roll, total in enumerate(l):
-        print ("total roll sof {} = {}".format(roll+1, total))
+    result = roll_die(num)
+    for roll, total in enumerate(result):
+        print ("total rolls of {} = {}".format(roll+1, total))
+
+    print("Average = {}".format(sum(result)/len(result)))
+    print("Mean = {}".format(statistics.mean(result)/len(result)))
+    print("Median = {}".format(statistics.median(result)/len(result)))
+
 
 
 #    for roll in range(10):
