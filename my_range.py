@@ -21,14 +21,14 @@ def main():
 # Create a list from range
     l = list(range(5, 10))
     print(l, type (l))
-    l2 = list(range(5,10)) + list (range(30,40)):
+    l2 = list(range(5,10)) + list(range(30,40))
     print(l2, type(l2))
 # Step arguement: (begin, stop step)
     l3 = list(range(0,20,2))
     print(l3, type(l3))
     #iterationover list using index notation
     s=[0,2,4,6]
-    for i in range(len(s))
+    for i in range(len(s)):
             print(s[i])
 # better way
     for v in s:
