@@ -18,6 +18,13 @@ def main():
     # eliminated dups
     sdata = set(data)
     print(sdata, type(sdata))
+    # iterate with for loop
+    for item in sdata:
+        print(item)
+    # Supports membership testing: oin, not in
+    print(5 in sdata)
+    # Adding elemetns to sets: Add and Update
+
 
 
 
