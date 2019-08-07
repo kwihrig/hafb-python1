@@ -81,6 +81,14 @@ def main():
     # also test membership with : in, not in
     print(37 in [12, 22, 37, 99])
     print(78 not in [12, 22, 37, 99])
+    #Remvoing elements from list: index and del
+    w = "the quick brown fox jumps over the lazy dog".split()
+    print(len(w), w)
+    del w[3]        # delete using index
+    print(len(w), w)
+    # remove using: remove()
+    w.remove("over")
+    print(len(w), w)
 
 
 
