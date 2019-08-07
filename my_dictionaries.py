@@ -29,6 +29,11 @@ def main():
     e = phonetic.copy()
     print (e)
 # updating a dict
+    stocks = {'GOOG':891, 'AAPL':416, 'IBM':194}
+    print (stocks)
+    stocks.update({'GOOG':999, 'YHOO':2})
+    print (stocks)
+
 
 
 
