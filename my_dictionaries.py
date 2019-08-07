@@ -11,11 +11,11 @@ def main():
     urls = {
         "google":"www.google.com",
         "yahoo":"www.yahoo.com",
-        "twitter":"twitter.com",
-        "wsu":"weber.edu"
+        "twitter":"www.twitter.com",
+        "wsu":"www.weber.edu"
     }
 
-    print (urls.type(urls))
+    print (urls, type(urls))
     # access by key:[key]
     print (urls["wsu"])
     # build dict with dict() constructor
@@ -28,6 +28,7 @@ def main():
     # make a copy
     e = phonetic.copy()
     print (e)
+# updating a dict
 
 
 
