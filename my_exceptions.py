@@ -11,12 +11,16 @@ def convert (s):
     :param s:
     :return:
     """
-    try:
-        x = int(s)
-    except ValueError:
-        print("conversion failed!")
-        x = -1
-    return x
+import sys
+#    x = -1
+
+try:
+ #       x = int(s)
+    return int(s)
+    except (ValueError, TypeError) as e:
+        print("conversion error{}"\
+              .format(str(e)), file=sys.stderr)
+    return -1
 
 def main():
     """
@@ -26,6 +30,7 @@ def main():
 
     print (convert("11"))
     print (convert("hello"))
+    print (convert([1, 4, 8]))
 
 
 
