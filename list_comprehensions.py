@@ -14,7 +14,10 @@ def main():
     data = []    # empty list
     for word in words:
         # Some analysis
-        print (word)
+        data.append(word)
+
+    # "filter" data
+    print (data)
 
 
 if __name__ == '__main__':
