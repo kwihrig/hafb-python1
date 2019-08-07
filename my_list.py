@@ -59,6 +59,19 @@ def main():
     print("a[1] is b[1] ", a[1] is b[1])
     print("a: ", a)
     print("b: ", b)
+    #repetition
+    c = [21, 37]
+    d = c * 4
+    print("c ", c)
+    print("d", d)
+    s = [[-1, 1]]*5
+    print(s)
+    s[1].append(7)
+    print(s)
+    # index ()
+    w = "the quick brown fox jumps over the lazy dog".split()
+    i = w.index('fox')
+    print("The index of 'fox' entry is:", i)
 
 
     #a= [[123,456], [444,888]]
