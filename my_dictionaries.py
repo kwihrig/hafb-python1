@@ -33,6 +33,18 @@ def main():
     print (stocks)
     stocks.update({'GOOG':999, 'YHOO':2})
     print (stocks)
+    # Iteration default is by key value
+    for key in stocks:
+        print ("{k} => {v}".format(k=key, v=stocks[key]))
+# Iterate by values
+    for val in stocks.values():
+        print ("val = ", val)
+        # iterate by both key and vlaue with: items()
+        for items in stocks.items():
+            print(items)
+        for key, val in stocks.items():
+            print(key, val)
+
 
 
 
