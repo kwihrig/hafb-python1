@@ -45,8 +45,13 @@ def main():
         for key, val in stocks.items():
             print(key, val)
     # test for membership
-        print('GOOG' in stocks)
-        print('WINDOWS' not in stocks)
+    print('GOOG' in stocks)
+    print('WINDOWS' not in stocks)
+    # Deleting: del keyword
+    print(stocks)
+    del stocks['YHOO']
+    print(stocks)
+
 
 
 
