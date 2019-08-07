@@ -42,6 +42,29 @@ def main():
     a = [[1,2], [3,4]]
     print(a, type(a))
     print("a[0][1]: ", a[0][1])
+#copy the list of lists
+    b = a[:]
+    a[0] = [8,9]
+    print("change a[0] to [8, 9]")
+    print("b is a", b is a)
+    print("a[0]: ", a[0])
+    print("b[0]: ", b[0])
+    print("a[0] is b[0] ", a[0] is b[0])
+    print("a[1] is b[1] ", a[1] is b[1])
+    #modify a[1]
+    a[1].append(5)
+    print("a[1]: ", a[1])
+    print("b[1]: ", b[1])
+    print("a[0] is b[0] ", a[0] is b[0])
+    print("a[1] is b[1] ", a[1] is b[1])
+    print("a: ", a)
+    print("b: ", b)
+
+
+    #a= [[123,456], [444,888]]
+    #print("a: ", a, type(a))
+
+
 
 
 
