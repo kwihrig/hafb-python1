@@ -89,7 +89,9 @@ def main():
     # remove using: remove()
     w.remove("over")
     print(len(w), w)
-
+    # same as
+    del w[w.index('dog')]
+    print(len(w), w)
 
 
 
