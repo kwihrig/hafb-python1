@@ -13,6 +13,14 @@ def first(iterable):
     :except: ValueError for StopIteration
     """
 
+    iterator = iter(iterable) #give me an iterator
+    try:
+        return next(iterator)
+    except StopIteration:
+        raise ValueError("iterable is empty")
+
+
+
 def main():
     """
     test function
