@@ -44,11 +44,9 @@ def main():
             print(items)
         for key, val in stocks.items():
             print(key, val)
-
-
-
-
-
+    # test for membership
+        print('GOOG' in stocks)
+        print('WINDOWS' not in stocks)
 
 
 
