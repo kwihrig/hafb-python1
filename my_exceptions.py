@@ -32,9 +32,12 @@ def sqrt(x):
     """
     guess = x
     i = 0
-    while guess*guess != x and i< 20:
-        guess = (guess + x/guess)/2.0
-        i +=1
+    try:
+        while guess*guess != x and i< 20:
+            guess = (guess + x/guess)/2.0
+            i +=1
+    except ZeroDivisionError:
+        raise ValueError()
 
     return guess
 
@@ -49,12 +52,17 @@ def main():
     #print (convert("hello"))
    # print (convert([1, 4, 8]))
 
-    print(sqrt(9))
-    print(sqrt(11))
-    print(sqrt(-3))
-    print(sqrt(100))
-    print(sqrt(256))
-    print(sqrt(255))
+    try:
+        print(sqrt(9))
+        print(sqrt(11))
+        print(sqrt(-3))
+        print(sqrt(100))
+        print(sqrt(256))
+        print(sqrt(255))
+    except ValueError:
+        print("Cannot compute")
+
+    print("Done")
 
 
 
