@@ -43,7 +43,7 @@ def main():
     pp(teams_nba) # in this example, we lose the clippers because they are from the same city?
 
     # Filter Predicates
-    primes = [x for x in range(1001) if is_prime(x)]
+    primes = [x for x in range(10001) if is_prime(x)]
     print(len(primes), primes)
 
 def is_prime(num):
