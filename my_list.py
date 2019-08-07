@@ -32,8 +32,15 @@ def main():
     print("t: ", t)
     print("t is s", t is s)
     t = s[:] # this is a deep copy - t is defined as the contents of s right now. we have made a copy of the data in t, s is still its own list
+    # or this t = s.copy()
+    # or this t = list(s)
     print("t is s", t is s)
     print("t == s", t == s)
+
+    # shallow copies
+    # A list of lists
+    a = [[1,2], [3,4]]
+
 
 
 
