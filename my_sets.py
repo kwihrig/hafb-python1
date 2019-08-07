@@ -44,7 +44,12 @@ def main():
     blond_hair = {"Harry", "Jack", "Amelia", "Mia", "Joshua"}
     smell_hcn = {"Harry", "Amelia"}
     taste_ptc = {"Harry", "Lily", "Amelia", "Lola"}
-    o_type = {}
+    o_blood = {"Mia", "Joshua", "Lily", "Olivia"}
+    b_blood = {"Amelia", "Jack"}
+    a_blood = {"Harry"}
+    ab_blood = {"Joshua", "Lola"}
+
+
 
 
 
