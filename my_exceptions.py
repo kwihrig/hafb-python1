@@ -29,6 +29,7 @@ def sqrt(x):
     compute the square root using method of Heron of Alexandria
     :param x: number to compute sqrt
     :return: sqrt of x
+    :raise ValueError() on ZeroDivisionError
     """
     guess = x
     i = 0
@@ -55,7 +56,7 @@ def main():
     try:
         print(sqrt(9))
         print(sqrt(11))
-        print(sqrt(-3))
+        print(sqrt(-1))
         print(sqrt(100))
         print(sqrt(256))
         print(sqrt(255))
