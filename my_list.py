@@ -40,6 +40,9 @@ def main():
     # shallow copies
     # A list of lists
     a = [[1,2], [3,4]]
+    print(a, type(a))
+    print("a[0][1]: ", a[0][1])
+
 
 
 
