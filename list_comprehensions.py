@@ -2,6 +2,7 @@
 Learn list comprehensions
 Readable, expressive, and effective.
 """
+from math import factorial
 
 
 def main():
@@ -18,6 +19,17 @@ def main():
 
     # "filter" data
     print (data)
+
+    # Task: find the length in digits of the first 20 factorials
+    info = [] #empty list
+    for x in range(20):
+        #print(factorial(x))
+        info.append(len(str(factorial(x))))
+    print(info)
+    #use a list comprehension: []
+    info2 = [len(str(factorial(x))) for x in range(20)]
+    print(info2)
+
 
 
 if __name__ == '__main__':
