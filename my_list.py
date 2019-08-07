@@ -26,6 +26,13 @@ def main():
     print("from 1 to the end", s[1:])
     print("from beg to three members", s[:3])
     print("all, from beg to end, whole list", s[:])
+#make a copy of the list
+    t=s
+    print("s: ", s)
+    print("t: ", t)
+    print("t is s", t is s)
+    t = s[:]
+    print("t is s", t is s)
 
 
 
