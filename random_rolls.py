@@ -13,11 +13,12 @@ def roll_die(num):
     etc
     """
     freq = [0] * 6         # list initial values to 0
-    for roll in range(100):
-#        freq.append()
-        print(random.randint(1, 6))
-        print(freq)
-
+    for roll in range(num):
+        n = random.randint(1, 6)
+        freq[n - 1] += 1
+#        print(random.randint(1, 6))
+    return freq
+    print (freq)
 
 
 def main():
@@ -25,8 +26,10 @@ def main():
     test function
     :return: none
     """
-    num = int(input("How many times you need to roll"))
-    roll_die(num)
+    num = int(input("How many times you need to roll: "))
+    l = roll_die(num)
+    for roll, total in enumerate(l):
+        print ("total roll sof {} = {}".format(roll+1, total))
 
 
 #    for roll in range(10):
