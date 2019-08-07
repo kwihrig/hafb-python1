@@ -25,10 +25,10 @@ def main():
     for x in range(20):
         #print(factorial(x))
         info.append(len(str(factorial(x))))
-    print(info)
+    print(info, type(info))
     #use a list comprehension: []
     info2 = [len(str(factorial(x))) for x in range(20)]
-    print(info2)
+    print(info2, type (info2))
 
 
 
