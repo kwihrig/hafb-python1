@@ -98,6 +98,7 @@ class Flight:
         """
        for passenger, seat in sorted(self._passenger_seats()):
            pass
+    # this one is incomplete as well
 
     def _passenger_seats(self):
         """
