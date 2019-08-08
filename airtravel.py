@@ -32,7 +32,8 @@ class Flight:
         #     char = number.decode('utf-8').split()  # split with space as default
         #       print(words)
 
-        self._number = number  # if a variable begins with one underscore, it is a private variable
+        self._number = number  # implementation details begin with '_'
+        #   if a variable begins with one underscore, it is a private variable
 
     def number(self):
         """
