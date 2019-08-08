@@ -96,8 +96,19 @@ class Flight:
         :param stuff for card
         :return:
         """
-       for passenger, seat in sorted(sself.passenger_seat()):
+       for passenger, seat in sorted(self._passenger_seats()):
            pass
+
+    def _passenger_seats(self):
+        """
+        printing device
+        :param: self
+        :param stuff for card
+        :return:
+        """
+        # I stopped typing here - i need to leave
+
+
 
 class Aircraft:
     """
