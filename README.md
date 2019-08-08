@@ -37,4 +37,5 @@ a bunch of summary stuff
     - Basics of exceptions: ** try, except, throw**
     - Comprehensions
 
+find his files at github.com/hugo-valle/intro-python
 
