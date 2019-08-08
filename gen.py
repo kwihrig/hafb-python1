@@ -75,7 +75,8 @@ def main():
     :return: none
     """
 #    run_take()
-    run_distinct()
+#    run_distinct()
+    run_pipeline()
 #    print("Done")
 
 
