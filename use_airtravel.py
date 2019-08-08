@@ -5,22 +5,25 @@ from airtravel import Flight, Aircraft
 from pprint import pprint as pp
 
 
+def make_flight():
+    f1 = Flight("SN066", Aircraft("G-EUP", "Airbus A319",
+                                  num_rows=22,
+                                  num_seats_per_row=6))
+    pp(f1._seating)
+    f1.allocate_seat("1A", "Guido Van Rossum")  # Python creator
+    f1.allocate_seat("6C", "Rasmus Lerdorf")  # php author
+    f1.allocate_seat("05D", "Bjare")  # C++
+    f1.allocate_seat("6F", "Larry")  # Created Perl
+    f1.allocate_seat("20E", "Yukihiro")  # Wrote Ruby
+    return f1
+
 def main():
     """
     test function
     :return: none
     """
-    f1 = Flight("SN066", Aircraft("G-EUP", "Airbus A319",
-                  num_rows=22,
-                  num_seats_per_row=6))
-    pp(f1._seating)
-    f1.allocate_seat("1A", "Guido Van Rossum") # Python creator
-    f1.allocate_seat("6C", "Rasmus Lerdorf") # php author
-    f1.allocate_seat("05D", "Bjare") # C++
-    f1.allocate_seat("6F", "Larry") # Created Perl
-    f1.allocate_seat("20E", "Yukihiro") # Wrote Ruby
 
-
+    f1 = make_flight()
     pp(f1._seating)
 
     # f2 = Flight("S13")
