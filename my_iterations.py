@@ -34,11 +34,14 @@ def main():
     # monday = [12, 14, 14, 15, 15, 16, 13, 10, 9]
     # monday = [12, 14, 14, 15, 15, 16, 13, 10, 9]
     # Calculate min, max, ave for 3 days
+    # {:4.1f} => 4 chars width, 1 decimal precision floating point
     for temps in zip(sunday, monday, tuesday):
         print("min={:4.1f}, max={:4.1f}, avg={:4.1f}".format(
             min(temps), max(temps), sum(temps)/len(temps) ))
 
     # Chain
+    all_temps = chain(sunday, monday, tuesday)
+    print("All temps > 0? ", all(t>0 for t in all_temps))
 
 
 
