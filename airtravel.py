@@ -42,6 +42,46 @@ class Flight:
         """
         return self._number
 
+    def airline(self):
+        """
+        Airline code
+        :return: airline code, 2 digits
+        """
+        return self._number[:2]
+
+
+class Aircraft:
+    """
+    Registration, model, num_rows, num_seats_row
+    """
+    def __init__(self, registration, model,
+                 num_rows, num_seats_per_row):
+        """
+        Aircraft
+        :param
+        :raise: ValueError (for invalid format)
+        """
+        # internal attributes/variables
+        self._registration = registration
+        self._model = model
+        self._num_rows = num_rows
+        self._num_seats_per_row = num_seats_per_row
+
+    def registration(self):
+        """
+        Registration
+        :param
+        :return: registration only
+        """
+        return self._registration
+
+    def model(self):
+        """
+        Registration
+        :param
+        :return: model only
+        """
+        return self._model
 
 def main():
     """
