@@ -58,6 +58,11 @@ def distinct(iterable):
 #     print("About to return")
 
 
+def run_pipeline():
+    items = [3, 6, 6, 2, 1, 1]
+    for item in take(3, distinct(items)):
+        print(item)
+
 def run_distinct():
     items = [5, 7, 7, 6, 5, 5, 8, 12, 1234567]
     for item in distinct(items):
