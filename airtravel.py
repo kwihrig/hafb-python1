@@ -71,6 +71,14 @@ class Flight:
             row = int(row_text)
         except ValueError:
             raise ValueError("Invalid row".format(row_text))
+        if row not in rows:
+            raise ValueError("Invalid row {}".format(row))
+
+        if self._seating[row][letter] is not None:
+            raise ValueError("Seat Taken Dude {}".format(seat))
+
+
+
         # return(range(1, self._num_rows + 1),
         #        "ABCDEFGHJ"[:self._num_seats_per_row])
         #
