@@ -79,11 +79,16 @@ class Flight:
         # Assign the seat
         self._seating[row][letter] = passenger
 
+    def num_av_seats(self):
+        """
+        Seats not filled
+        :param: self
+        :return: qty of empty seats
+        """
+        return sum(sum (1 for s in row.values() if s is None)
+                   for row in self._seating
+                   if row is not None)
 
-
-        # return(range(1, self._num_rows + 1),
-        #        "ABCDEFGHJ"[:self._num_seats_per_row])
-        #
 
 class Aircraft:
     """

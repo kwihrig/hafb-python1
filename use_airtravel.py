@@ -17,14 +17,32 @@ def make_flight():
     flight.allocate_seat("20E", "Yukihiro")  # Wrote Ruby
     return flight
 
+def console_card_printer(passenger, seat, flight_number, aircraft):
+    output = "| Name: {0}" \
+            " Flight: {1} " \
+            " Seat: {2} " \
+             "Aircraft: {1} " \
+             " |".format(passenger, flight_number, seat, aircraft)
+    banner = "+" + "-" * (len(output) -2) + "+"
+    border = "|" + " " * (len(output) -2) + "|"
+    lines  = [banner, border, output, border, banner]
+    card = '\n'.join(lines)
+    print(card)
+    print()
+
+
+
 def main():
     """
     test function
     :return: none
     """
 
-    flight = make_flight()
-    pp(flight._seating)
+    flight_1 = make_flight()
+    pp(flight_1._seating)
+    print("Available seats: ",
+       flight_1.num_av_seats())
+
 
     # f2 = Flight("S13")
     # print(f2, f2.number())
