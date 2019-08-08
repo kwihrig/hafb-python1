@@ -6,7 +6,7 @@ class Flight:
     """
     A flight with a particular passenger aircraft
     """
-    def __init__(self, number):
+    def __init__(self, number, aircraft):
         """
         Initializes flight number
         :param number: flight number
@@ -34,6 +34,11 @@ class Flight:
 
         self._number = number  # implementation details begin with '_'
         #   if a variable begins with one underscore, it is a private variable
+        self._aircraft = aircraft
+
+        rows, seats = self._aircraft.seating_plan()
+        self._seating = [None] + \
+                        [{letter:None for letter in seats} for _ in rows]
 
     def number(self):
         """
@@ -49,6 +54,15 @@ class Flight:
         """
         return self._number[:2]
 
+    def allocate_seat(self):
+        """
+        Seat assigned
+        :param seat, name
+        :return: seat & name
+        """
+        # return(range(1, self._num_rows + 1),
+        #        "ABCDEFGHJ"[:self._num_seats_per_row])
+        #
 
 class Aircraft:
     """
@@ -85,14 +99,12 @@ class Aircraft:
 
     def seating_plan(self):
         """
-        Seats assigned
+        Seats available
         :param
         :return: seat only
         """
         return(range(1, self._num_rows + 1),
                "ABCDEFGHJ"[:self._num_seats_per_row])
-
-
 
 
 def main():
