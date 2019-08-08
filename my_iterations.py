@@ -16,7 +16,8 @@ def main():
     thousand_primes = islice((x for x in count() if is_prime(x)), 1000)
     print(thousand_primes, type(thousand_primes))
     print("list of first thousand prime numbers", list(thousand_primes))
-    print("list of first thousand prime numbers", sum(thousand_primes))
+    thousand_primes = islice((x for x in count() if is_prime(x)), 1000)
+    print("Sum of first thousand prime numbers", sum(thousand_primes))
 
 
 if __name__ == '__main__':
