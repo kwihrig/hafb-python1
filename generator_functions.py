@@ -1,7 +1,9 @@
 """
-Learn about exceptions
-when an exception is found, normal flow of program is interrupted
-
+Learn about generator functions
+- Describe iterables series with code functions
+- Are laze evaluated: the next value in the sequence is computed on demand
+- cCan model infinite series/sequence: data streams, mathematical series with no end
+- Can use pipelines (pipeline:output from one program can be taken as input to next program)
 """
 
 
