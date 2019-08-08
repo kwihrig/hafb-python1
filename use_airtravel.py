@@ -6,16 +6,16 @@ from pprint import pprint as pp
 
 
 def make_flight():
-    f1 = Flight("SN066", Aircraft("G-EUP", "Airbus A319",
+    flight = Flight("SN066", Aircraft("G-EUP", "Airbus A319",
                                   num_rows=22,
                                   num_seats_per_row=6))
-    pp(f1._seating)
-    f1.allocate_seat("1A", "Guido Van Rossum")  # Python creator
-    f1.allocate_seat("6C", "Rasmus Lerdorf")  # php author
-    f1.allocate_seat("05D", "Bjare")  # C++
-    f1.allocate_seat("6F", "Larry")  # Created Perl
-    f1.allocate_seat("20E", "Yukihiro")  # Wrote Ruby
-    return f1
+    pp(flight._seating)
+    flight.allocate_seat("1A", "Guido Van Rossum")  # Python creator
+    flight.allocate_seat("6C", "Rasmus Lerdorf")  # php author
+    flight.allocate_seat("05D", "Bjare")  # C++
+    flight.allocate_seat("6F", "Larry")  # Created Perl
+    flight.allocate_seat("20E", "Yukihiro")  # Wrote Ruby
+    return flight
 
 def main():
     """
@@ -23,8 +23,8 @@ def main():
     :return: none
     """
 
-    f1 = make_flight()
-    pp(f1._seating)
+    flight = make_flight()
+    pp(flight._seating)
 
     # f2 = Flight("S13")
     # print(f2, f2.number())
