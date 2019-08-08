@@ -6,7 +6,12 @@ class Flight:
     """
     A flight with a particular passenger aircraft
     """
-    pass
+    def number(self):
+        """
+        Flight Number
+        :return: flight number
+        """
+        return "SN060"
 
 
 def main():

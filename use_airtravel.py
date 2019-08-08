@@ -13,6 +13,7 @@ def main():
     """
     f = Flight()
     print(f, type(f))
+    print(f.number())
 
 
 if __name__ == '__main__':
