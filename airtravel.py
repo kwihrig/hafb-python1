@@ -89,6 +89,15 @@ class Flight:
                    for row in self._seating
                    if row is not None)
 
+    def make_boarding_class(self, card_printer):
+        """
+        printing device
+        :param: self
+        :param stuff for card
+        :return:
+        """
+       for passenger, seat in sorted(sself.passenger_seat()):
+           pass
 
 class Aircraft:
     """
