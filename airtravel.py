@@ -76,6 +76,8 @@ class Flight:
 
         if self._seating[row][letter] is not None:
             raise ValueError("Seat Taken Dude {}".format(seat))
+        # Assign the seat
+        self._seating[row][letter] = passenger
 
 
 
