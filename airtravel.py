@@ -61,6 +61,16 @@ class Flight:
         :param passenger: passenger name
         :return: seat & name
         """
+        rows, seat_letter = self._aircraft.seating_plan()
+        letter = seat[-1]    # to extract last character for seat
+        if letter not in seat_letter:
+            raise ValueError("Invalid seat letter {}".format(letter))
+
+        row_text = seat[:-1]
+        try:
+            row = int(row_text)
+        except ValueError:
+            raise ValueError("Invalid row".format(row_text))
         # return(range(1, self._num_rows + 1),
         #        "ABCDEFGHJ"[:self._num_seats_per_row])
         #
