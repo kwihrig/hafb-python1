@@ -54,10 +54,11 @@ class Flight:
         """
         return self._number[:2]
 
-    def allocate_seat(self):
+    def allocate_seat(self, seat, passenger):
         """
-        Seat assigned
-        :param seat, name
+        Allocate Seat to passenger
+        :param seat: seat designator such as '12C', '21F'
+        :param passenger: passenger name
         :return: seat & name
         """
         # return(range(1, self._num_rows + 1),
