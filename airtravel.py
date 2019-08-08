@@ -6,6 +6,9 @@ class Flight:
     """
     A flight with a particular passenger aircraft
     """
+    def __init__(self, number):
+
+
     def number(self):
         """
         Flight Number
