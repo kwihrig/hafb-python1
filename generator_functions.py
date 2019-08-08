@@ -4,9 +4,14 @@ Learn about generator functions
 - Are laze evaluated: the next value in the sequence is computed on demand
 - cCan model infinite series/sequence: data streams, mathematical series with no end
 - Can use pipelines (pipeline:output from one program can be taken as input to next program)
+
+use the yield keyword
 """
 
-
+def gen123():
+    yield 1
+    yield 2
+    yield 3
 
 
 def main():
@@ -14,7 +19,13 @@ def main():
     test function
     :return: none
     """
-
+    g = gen123()
+    print (g,type(g))
+    #yield next value
+    print(g, next(g))
+    #Iterate over the generator func
+    for v in gen123():
+        print (v)
 
 
     print("Done")
