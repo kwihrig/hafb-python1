@@ -25,9 +25,22 @@ def run_take():
     test the take() funct
     """
     items = [2, 4, 6, 8, 10]
-    for item in take(3, items):
+    for item in take(11, items):
         print(item)
 
+def distinct(iterable):
+    """
+    return unique utems by eliminating dups
+    :param iterable: the source series
+    :yields: unique elements in order from 'iterable'
+    """
+    seen = set()
+    for item in iterable:
+        if item in seen:
+            continue # takes you back to the top of the loop block
+        yield item
+        seen.add(item)
+#        print(item)
 
     # yield 1
     # yield 2
