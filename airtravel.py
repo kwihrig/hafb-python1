@@ -83,6 +83,18 @@ class Aircraft:
         """
         return self._model
 
+    def seating_plan(self):
+        """
+        Seats assigned
+        :param
+        :return: seat only
+        """
+        return(range(1, self._num_rows + 1),
+               "ABCDEFGHJ"[:self._num_seats_per_row])
+
+
+
+
 def main():
     """
     test function
