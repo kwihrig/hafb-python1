@@ -41,6 +41,8 @@ def distinct(iterable):
         yield item
         seen.add(item)
 #        print(item)
+#        print(seen)
+
 
     # yield 1
     # yield 2
@@ -56,13 +58,19 @@ def distinct(iterable):
 #     print("About to return")
 
 
+def run_distinct():
+    items = [5, 7, 7, 6, 5, 5, 8, 12, 1234567]
+    for item in distinct(items):
+        print(item)
+
 
 def main():
     """
     test function
     :return: none
     """
-    run_take()
+#    run_take()
+    run_distinct()
 #    print("Done")
 
 
