@@ -13,6 +13,16 @@ def gen123():
     yield 2
     yield 3
 
+def gen246():
+    print("About to yield 2")
+    yield 2
+    print("About to yield 4")
+    yield 4
+    print("About to yield 6")
+    yield 6
+    print("About to return")
+
+
 
 def main():
     """
@@ -21,11 +31,19 @@ def main():
     """
     g = gen123()
     print (g,type(g))
-    #yield next value
+    # yield next value
     print(g, next(g))
-    #Iterate over the generator func
+    # Iterate over the generator func
     for v in gen123():
         print (v)
+
+    h = gen246()
+    print(next(h))
+    print(next(h))
+    print(next(h))
+    print(next(h))
+    print(next(h))
+
 
 
     print("Done")
